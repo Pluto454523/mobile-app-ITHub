@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#0C3A8D"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_bold"
+            android:text="เกี่ยวกับภาควิชา"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/about_menu_bg"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="60dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit"
+                                android:text="ที่ตั้งและติดต่อสอบถาม"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_marginBottom="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/line" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ภาควิชาเทคโนโลยีสารสนเทศ
+\nคณะเทคโนโลยีและการจัดการอุตสาหกรรม
+\nมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+\n129 ม. 21 ต.เนินหอม อ.เมือง จ.ปราจีนบุรี 25230
+\n
+\nโทร. 037-217340 ต่อ 7065, 7066
+\nE-mail : it@itm.kmutnb.ac.th"
+                            android:textSize="16sp" />
+
+                        <WebView
+                            android:id="@+id/map"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginBottom="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit"
+                                android:text="ปรัชญา"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_marginBottom="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/line" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ปรัชญา
+\nพัฒนาคน เพื่อพัฒนาเทคโนโลยีสารสนเทศ
+\n
+\nปณิธาณ
+\nผลิตบัณฑิตที่มีความรู้คู่คุณธรรม ส่งเสริมการบริการวิชาการและมุ่งมั่นการวิจัยให้เกิดประโยชน์สูงสุดต่อสังคม
+\n
+\n
+\nวิสัยทัศน์
+\nเป็นผู้นำทางด้านเทคโนโลยีสารสนเทศในระดับภูมิภาค
+\n
+\nพันธกิจ
+\n1. ผลิตบัณฑิตที่มีความรู้ความสามารถทางด้านเทคโนโลยีสารสนเทศ
+\n2. พัฒนาการเรียนการสอนทางด้านเทคโนโลยีสารสนเทศที่มีประสิทธิภาพ
+\n3. พัฒนาบัณฑิตให้มีคุณธรรมและจริยธรรม
+\n4. วิจัยและพัฒนาเทคโนโลยีสารสนเทศให้เกิดประโยชน์แก่สังคม
+\n5. บริการวิชาการด้านเทคโนโลยีสารสนเทศแก่สังคม
+\n
+\nวัตถุประสงค์
+\n1. ผลิตบัณฑิตทางด้านเทคโนโลยีสารสนเทศ ที่มีความรู้ความสามารถและประยุกต์ใช้ได้ตรงกับความต้องการของธุรกิจและอุตสาหกรรม
+\n2. เพื่อพัฒนาการเรียนการสอนทางด้านเทคโนโลยีที่มีประสิทธิภาพ
+\n3. เพื่อพัฒนาบัณฑิตให้มี คุณธรรมและจริยธรรม
+\n4. เพื่อวิจัย พัฒนาและประยุกต์เทคโนโลยีสารสนเทศให้เกิดประโยชน์แก่สังคม
+\n5. เพื่อให้บริการวิชาการด้านเทคโนโลยีสารสนเทศแก่ชุมชนและสังคม"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
